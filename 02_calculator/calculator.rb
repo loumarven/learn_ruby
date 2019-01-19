@@ -27,6 +27,5 @@ def factorial(num)
     return 'ERROR'
   end
 
-  f = 1
-  (f..num).reduce(f) { |num, f| num * f }
+  num * factorial(num - 1)
 end
