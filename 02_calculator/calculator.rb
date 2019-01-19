@@ -21,7 +21,6 @@ def power(num, exp)
 end
 
 def factorial(num)
-  puts "num: #{num}"
   if num == 0
     return 1
   elsif num < 0
