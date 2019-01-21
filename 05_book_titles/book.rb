@@ -2,11 +2,10 @@ class Book
 # write your code here
   def title
     words = @title.split(" ")
-    little_words = ["the", "and", "a", "an", "in", "of"]
 
     capitalized_words = words.map { |word| to_capital(word) }
+    capitalized_words[0].capitalize! # capitalize first word that is a little word
 
-    capitalized_words[0] = capitalized_words[0].capitalize
     @title = capitalized_words.join(" ")
   end
 

@@ -32,6 +32,6 @@ def titleize(string)
     end
   end
 
-  res[0] = res[0].capitalize #capitalize for string starting with little words
+  res[0].capitalize! #capitalize first word that if a little word
   res.join(" ")
 end
